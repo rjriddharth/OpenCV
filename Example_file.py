@@ -23,7 +23,7 @@ src_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 max_binary_value = 255
 threshold_type = cv2.THRESH_BINARY
 
-for i in range(0,255,10):
+for i in range(0,255,50):
   threshold_value = i
   _, dst = cv2.threshold(src_gray, threshold_value, max_binary_value, threshold_type)
 
