@@ -23,9 +23,11 @@ src_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 max_binary_value = 255
 threshold_type = cv2.THRESH_BINARY
 
-for i in range(0,255,25):
+for i in range(0,255,10):
   threshold_value = i
   _, dst = cv2.threshold(src_gray, threshold_value, max_binary_value, threshold_type)
 
   # Write an Image
-  cv2.imwrite('output_' + str(i) + '.jpg',dst)
+  if not os.path.exists('/content/OpenCV2/ThresholdRange1'):
+    os.mkdir('/content/OpenCV2/ThresholdRange1')
+  cv2.imwrite('./ThresholdRange1/output_' + str(i) + '.jpg',dst)
