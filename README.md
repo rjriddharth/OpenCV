@@ -1,2 +1,2 @@
-# OpenCV
-MSD-RAS OpenCv Modules for Google Collab
+# OpenCV2
+MSD-RAS OpenCV2 Modules for Google Collab
