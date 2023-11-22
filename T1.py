@@ -16,7 +16,7 @@ filename = args.File
 
 # Now we write our openCV Methods here ---------
 flags = [i for i in dir(cv2) if i.startswith('COLOR_')]
-print( flags )
+#print( flags )
 # Read an Image
 #img = cv2.imread(args.File)
 #src_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -29,5 +29,5 @@ print( flags )
 #  _, dst = cv2.threshold(src_gray, threshold_value, max_binary_value, threshold_type)
 
   # Write an Image
-  cv2.imwrite('output_' + str(i) + '.jpg',dst)# import libraries used in the script
+cv2.imwrite('output_' + str(i) + '.jpg',flag)# import libraries used in the script
 # in this case we will import cv2 - the opencv module and argparse for command line argument inputs
