@@ -1,4 +1,5 @@
 import cv2
+import argparse
 import numpy as np
 
 def help():
@@ -23,7 +24,7 @@ def simple_contour(current_query, n=300):
 
 def main():
     path = "data/shape_sample/"
-    parser = cv2.ArgumentParser()
+    parser = argparse.ArgumentParser()
     parser.add_argument('input', type=int, default=1, help='Index of the input image (between 1 and 20)')
     args = parser.parse_args()
 
