@@ -25,7 +25,7 @@ def simple_contour(current_query, n=300):
 def main():
     path = "data/shape_sample/"
     parser = argparse.ArgumentParser()
-    parser.add_argument('input', type=int, default=1, nargs='?', help='Index of the input image (between 1 and 20)')
+    parser.add_argument('input', type=img, default=1, nargs='?', help='Index of the input image (between 1 and 20)')
     args = parser.parse_args()
 
     if args.input < 1 or args.input > 20:
